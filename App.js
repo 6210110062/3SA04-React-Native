@@ -12,12 +12,21 @@ export default function App() {
     </View>
  );
 }
+const flex1 = ()=>{
+  return (
+      <View style={styles.container}>
+        <Text style={styles.main}>main</Text>
+      </View>
 
+  )
+}
 const styles = StyleSheet.create({
- container: {
- flex: 1,
- backgroundColor: '#fff',
- alignItems: 'center',
- justifyContent: 'center',
- },
+      container: {
+      flex: 1,
+      backgroundColor: '#fff',
+      alignItems: 'center',
+      justifyContent: 'center',
+      paddingTop: 40,
+ }
+
 });

@@ -5,10 +5,10 @@ export default function Forecast(props) {
     return (
 
         <View>
-            <Text>{props.main}</Text>
-            <Text>{props.description}</Text>
-            <Text>{props.temp}</Text>
-             <Text>°C</Text>
+            <Text>{props.main}main</Text>
+            <Text>{props.description}description</Text>
+            <Text>{props.temp}°C</Text>
+             
         </View>
             
 
