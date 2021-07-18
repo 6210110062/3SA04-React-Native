@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { ImageBackground, StyleSheet, Text } from 'react-native'
 import Forecast from './Forcast'
 
@@ -12,7 +12,9 @@ export default function Weather(props) {
                 setForecastInfo({
                     main: json.weather[0].main,
                     description: json.weather[0].description,
-                    temp: json.main.temp});
+                    temp: json.main.temp,
+                    feelslike: json.main.feelslike
+                });
                 })
             .catch((error) => {
                 console.warn(error);
@@ -24,7 +26,9 @@ export default function Weather(props) {
     const [forecastInfo, setForecastInfo] = useState({
         main: ' ',
         description: ' ',
-        temp: 0
+        temp: 0,
+        feelslike : 0,
+
         })
 
     return (

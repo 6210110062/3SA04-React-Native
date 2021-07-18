@@ -1,5 +1,5 @@
 import React from 'react'
-import { View ,Text } from 'react-native'
+import { View ,Text,StyleSheet } from 'react-native'
 
 export default function Forecast(props) {
     return (
@@ -8,6 +8,7 @@ export default function Forecast(props) {
             <Text>{props.main}main</Text>
             <Text>{props.description}description</Text>
             <Text>{props.temp}°C</Text>
+            <Text>feel like: {props.feelslike} °C </Text>
              
         </View>
             
